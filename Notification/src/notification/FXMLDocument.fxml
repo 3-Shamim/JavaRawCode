@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="notification.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="87.0" layoutY="58.0" onAction="#ControllerFXNotifications" text="Controller FX notificatios" />
+      <Button fx:id="button1" layoutX="106.0" layoutY="109.0" onAction="#trayNotifications" text="Tray Notifications" />
+    </children>
+</AnchorPane>

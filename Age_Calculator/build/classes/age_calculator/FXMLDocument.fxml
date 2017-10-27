@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="age_calculator.FXMLDocumentController">
+   <children>
+      <VBox alignment="CENTER" layoutX="113.0" layoutY="38.0" prefHeight="200.0" prefWidth="400.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="390.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="41.0" prefWidth="125.0" text="Give your Birth-Date :" />
+                  <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="35.0" />
+                  <DatePicker fx:id="dateField" editable="false" prefHeight="25.0" prefWidth="141.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="400.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="101.0" text="Year :" />
+                  <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="17.0" />
+                  <Label fx:id="yearLabel" prefHeight="34.0" prefWidth="116.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="85.0" prefHeight="39.0" prefWidth="400.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="101.0" text="Month :" />
+                  <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="17.0" />
+                  <Label fx:id="monthLabel" prefHeight="34.0" prefWidth="116.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="104.0" prefHeight="39.0" prefWidth="400.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="101.0" text="Day :" />
+                  <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="17.0" />
+                  <Label fx:id="dayLabel" prefHeight="34.0" prefWidth="116.0" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#getAgeActionButton" text="Get Age">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

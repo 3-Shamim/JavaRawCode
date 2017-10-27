@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="ProductCompare.ProductCompareController">
+   <children>
+      <HBox layoutY="54.0" prefHeight="332.0" prefWidth="572.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="54.0">
+         <children>
+            <AnchorPane id="LoginAnchor" prefHeight="372.0" prefWidth="282.0" stylesheets="@../All_Css/All_Css.css">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <GridPane prefHeight="334.0" prefWidth="250.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="99.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="173.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Type :" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Model :" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Brand :" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Price :" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="PriceLable" prefHeight="53.0" prefWidth="169.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label fx:id="TypeLable" prefHeight="57.0" prefWidth="168.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="ModelLable" prefHeight="64.0" prefWidth="209.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="BrandLable" prefHeight="62.0" prefWidth="170.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <JFXTextField fx:id="searchBox" onKeyReleased="#searchBox" GridPane.columnIndex="1" />
+                              <Label prefHeight="30.0" prefWidth="108.0" text="Search">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Separator>
+            <AnchorPane id="LoginAnchor" layoutX="10.0" layoutY="10.0" prefHeight="372.0" prefWidth="282.0" stylesheets="@../All_Css/All_Css.css">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <GridPane prefHeight="334.0" prefWidth="250.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="99.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="173.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Type :" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Model :" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Brand :" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Price :" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="PriceLable1" prefHeight="53.0" prefWidth="169.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label fx:id="TypeLable1" prefHeight="57.0" prefWidth="168.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="ModelLable1" prefHeight="64.0" prefWidth="209.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="BrandLable1" prefHeight="62.0" prefWidth="170.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <JFXTextField fx:id="searchBox1" onKeyReleased="#searchBox1" GridPane.columnIndex="1" />
+                              <Label prefHeight="30.0" prefWidth="126.0" text="Search">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="196.0" layoutY="14.0" prefHeight="30.0" prefWidth="208.0" text="Compare Product">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

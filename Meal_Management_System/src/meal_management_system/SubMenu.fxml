@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="130.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="106.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/2.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton id="Drawer_Button" accessibleText="CostList" layoutX="10.0" layoutY="104.0" prefHeight="69.0" prefWidth="133.0" stylesheets="@../CSS/myCss.css" text="Cost List" />
+      <JFXButton id="Drawer_Button" accessibleText="Details" layoutX="10.0" layoutY="165.0" prefHeight="69.0" prefWidth="133.0" stylesheets="@../CSS/myCss.css" text="Details" />
+      <JFXButton id="Drawer_Button" accessibleText="resetDB" prefHeight="69.0" prefWidth="133.0" stylesheets="@../CSS/myCss.css" text="Reset DB" />
+      <JFXButton id="Drawer_Button" accessibleText="About" layoutX="10.0" layoutY="287.0" prefHeight="69.0" prefWidth="133.0" stylesheets="@../CSS/myCss.css" text="About" />
+      <JFXButton id="Drawer_Button" accessibleText="Exit" layoutX="10.0" layoutY="352.0" prefHeight="69.0" prefWidth="133.0" stylesheets="@../CSS/myCss.css" text="Exit" />
+   </children>
+</VBox>

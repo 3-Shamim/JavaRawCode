@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="140.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/2.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton id="Menu_Button" accessibleText="Button_one" prefHeight="63.0" prefWidth="140.0" stylesheets="@Mycss.css" text="Button-1" />
+      <JFXButton id="Menu_Button" accessibleText="Button_two" layoutX="10.0" layoutY="119.0" prefHeight="63.0" prefWidth="140.0" stylesheets="@Mycss.css" text="Button-2" />
+      <JFXButton id="Menu_Button" accessibleText="Button_three" layoutX="10.0" layoutY="218.0" prefHeight="63.0" prefWidth="140.0" stylesheets="@Mycss.css" text="Button-3" />
+      <JFXButton id="Menu_Button" accessibleText="Button_four" layoutX="10.0" layoutY="306.0" prefHeight="63.0" prefWidth="140.0" stylesheets="@Mycss.css" text="Button-4" />
+      <JFXButton id="Menu_Button" accessibleText="Button_exit" layoutX="10.0" layoutY="98.0" prefHeight="63.0" prefWidth="140.0" stylesheets="@Mycss.css" text="Exit" />
+   </children>
+</VBox>

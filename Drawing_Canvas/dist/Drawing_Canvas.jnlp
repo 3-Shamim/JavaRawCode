@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Drawing_Canvas.jnlp">
+  <information>
+    <title>Drawing_Canvas</title>
+    <vendor>MD SHAMIM</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Drawing_Canvas.jar" size="3824" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Drawing_Canvas" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="drawing_canvas.Drawing_Canvas"  name="Drawing_Canvas" />
+  <update check="always"/>
+</jnlp>

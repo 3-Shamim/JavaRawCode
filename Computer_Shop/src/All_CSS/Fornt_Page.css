@@ -1,0 +1,24 @@
+#Fornt_Pane
+{
+    
+}
+
+#Login_Style
+{
+    -fx-background-color: #4444fe;
+}
+
+#Custom_Button
+{
+    -fx-background-color: #3333ff;
+    -fx-text-fill: #fff;
+}
+#Custom_Button:hover
+{
+    -fx-background-color: #3300ff;
+    -fx-text-fill: #fff;
+}
+#LoginAnchor
+{
+    -fx-background-color: #FFF;
+}

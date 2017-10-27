@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FXML_Test.jnlp">
+  <information>
+    <title>FXML_Test</title>
+    <vendor>MD SHAMIM</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FXML_Test.jar" size="4371" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2350676" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FXML_Test" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="fxml_test.Test"  name="FXML_Test" />
+  <update check="always"/>
+</jnlp>

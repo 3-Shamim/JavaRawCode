@@ -1,0 +1,28 @@
+#AnchorPane
+{
+    
+}
+
+#Login_Style
+{
+    -fx-background-color: #4444fe;
+}
+
+#Custom_Button
+{
+    -fx-background-color: #3333ff;
+    -fx-text-fill: #fff;
+}
+#Custom_Button:hover
+{
+    -fx-background-color: #3300ff;
+    -fx-text-fill: #fff;
+}
+#Custom_Button_Here:hover
+{
+    -fx-underline: true;
+}
+#LoginAnchor
+{
+    -fx-background-color: #FFF;
+}

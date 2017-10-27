@@ -1,0 +1,20 @@
+#MainPanel 
+{
+    -fx-background-color: #6699ff;
+}
+#buttonTool
+{
+    -fx-background-color: #6699ff;
+}
+#ButtonStyle
+{
+    -fx-background-color: #00ccff;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: 800;
+}
+#ButtonStyle:hover
+{
+    -fx-background-color: #ff3333;
+    -fx-text-fill: #ffffff;
+}

@@ -1,0 +1,32 @@
+
+#AnchorPane
+{
+    -fx-background-color: #ffffff;
+}
+
+#ToolButtonBox
+{
+    -fx-background-color: transparent;
+}
+#RemoveButton
+{
+    -fx-background-color: #3399ff;
+    -fx-text-fill: #ffffff;
+    -fx-font: 14px "";
+    -fx-font-weight: 800;
+}
+#RemoveButton:hover
+{
+    -fx-background-color: #3366ff;
+}
+#SubmitButton
+{
+    -fx-background-color: #3399ff;
+    -fx-text-fill: #ffffff;
+    -fx-font: 14px "";
+    -fx-font-weight: 800;
+}
+#SubmitButton:hover
+{
+    -fx-background-color: #3366ff;
+}

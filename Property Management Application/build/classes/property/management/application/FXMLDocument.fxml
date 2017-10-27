@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="MainPanel" prefHeight="356.0" prefWidth="521.0" stylesheets="@../../../OtherClass/PManagementCss.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="property.management.application.FXMLDocumentController">
+   <children>
+      <VBox prefHeight="356.0" prefWidth="521.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <HBox prefHeight="162.0" prefWidth="521.0">
+               <children>
+                  <GridPane prefHeight="117.0" prefWidth="286.0" stylesheets="@../../../OtherClass/PManagementCss.css">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="88.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="198.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="IdField" GridPane.columnIndex="1" />
+                        <TextField fx:id="NameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Property Id" />
+                        <Label text="Property Name" GridPane.rowIndex="1" />
+                        <ToolBar id="buttonTool" prefHeight="40.0" prefWidth="202.0" stylesheets="@../../../OtherClass/PManagementCss.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                          <items>
+                              <Button id="ButtonStyle" mnemonicParsing="false" onAction="#DeleteButton" text="Delete" />
+                              <Button id="ButtonStyle" mnemonicParsing="false" onAction="#UpdateButton" text="Update" />
+                              <Button id="ButtonStyle" mnemonicParsing="false" onAction="#SubmitButton" prefHeight="26.0" prefWidth="68.0" text="Submit" />
+                          </items>
+                        </ToolBar>
+                     </children>
+                  </GridPane>
+                  <ListView fx:id="ListView" onMouseClicked="#ListClickAction" prefHeight="140.0" prefWidth="198.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ListView>
+               </children>
+            </HBox>
+            <TableView fx:id="TableView" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="IdColum" prefWidth="240.0" text="Property Id" />
+                <TableColumn fx:id="NameColum" minWidth="0.0" prefWidth="252.0" text="Property Name" />
+              </columns>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="filtering.FXMLDocumentController">
+   <children>
+      <VBox layoutX="122.0" prefHeight="200.0" prefWidth="320.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <TextField fx:id="filterField" />
+            <TableView fx:id="personTable" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="firstNameColumn" prefWidth="160.0" text="FName" />
+                <TableColumn fx:id="lastNameColumn" prefWidth="160.0" text="LastName" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

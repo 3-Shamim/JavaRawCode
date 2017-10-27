@@ -1,0 +1,32 @@
+#Custom_Button
+{
+    -fx-background-color: #0048ef;
+}
+#H_BOX
+{
+    -fx-border-color: #666666;
+}
+#Drawer_Button
+{
+    -fx-background-color: #ffffff;
+}
+#Drawer_Button:hover
+{
+    -fx-background-color: #00dd44;
+}
+#MenuLabel
+{
+    
+}
+#Background
+{
+    -fx-background-color: #9ACD32;
+}
+#Table
+{
+    -fx-background-color: #9ACD32;
+}
+#SplashScreen
+{
+    -fx-background-color:  #0072e7;
+}

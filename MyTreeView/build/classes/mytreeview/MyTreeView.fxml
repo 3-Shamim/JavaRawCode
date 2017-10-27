@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytreeview.MyTreeViewController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="214.0">
+               <children>
+                  <TreeView fx:id="treeView" prefHeight="422.0" prefWidth="214.0" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="372.0" prefWidth="21.0" />
+            <TreeTableView fx:id="tableView" prefHeight="372.0" prefWidth="351.0">
+              <columns>
+                <TreeTableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+                <TreeTableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+              </columns>
+               <columnResizePolicy>
+                  <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TreeTableView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

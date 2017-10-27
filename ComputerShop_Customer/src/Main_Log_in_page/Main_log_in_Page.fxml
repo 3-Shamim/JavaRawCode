@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main_Log_in_page.Main_log_in_PageController">
+   <children>
+      <Pane id="Login_Style" prefHeight="166.0" prefWidth="633.0" stylesheets="@../All_Css/All_Css.css" />
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="86.0" prefHeight="319.0" prefWidth="605.0" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="86.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="242.0" prefWidth="605.0">
+               <children>
+                  <AnchorPane id="LoginAnchor" prefHeight="242.0" prefWidth="396.0" stylesheets="@../All_Css/All_Css.css">
+                     <children>
+                        <GridPane layoutX="42.0" layoutY="21.0" prefHeight="201.0" prefWidth="312.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <JFXTextField fx:id="LoginTextField" onAction="#LoginButton" prefHeight="25.0" prefWidth="307.0" promptText="User name" GridPane.rowIndex="1" />
+                              <JFXPasswordField fx:id="LoginPassField" onAction="#LoginButton" promptText="Password" GridPane.rowIndex="2" />
+                              <JFXButton id="Custom_Button" contentDisplay="RIGHT" onAction="#LoginButton" prefHeight="42.0" prefWidth="107.0" stylesheets="@../All_Css/All_Css.css" text="Login" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets top="5.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../ImageIcon/open-padlock-w.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <Label text="Login">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <Label layoutX="88.0" layoutY="12.0" text="Create an Account">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton id="Custom_Button_Here" layoutX="202.0" layoutY="10.0" onAction="#CreateAccountButton" stylesheets="@../All_Css/All_Css.css" text="Here" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </GridPane>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <JFXButton id="Custom_Button" onAction="#BackFromLogIn" prefHeight="32.0" prefWidth="105.0" stylesheets="@../All_Css/All_Css.css" text="Back">
+               <VBox.margin>
+                  <Insets left="290.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageIcon/left-arrow-w.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
